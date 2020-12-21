@@ -181,7 +181,23 @@ a {
 }
 
 .social-icons li.instagram {
-    background: #e95950;
+    background: linear-gradient(350deg,
+        rgba(255, 255, 255, 0) 0,
+        rgba(244, 48, 109, 0) 36%,
+        #f4306d 48%,
+        #d53592 63%,
+        #4258f5 100%),
+    radial-gradient(circle farthest-corner at 28% 142%,
+        rgba(255 , 104, 177, 0.1) 0,
+        #ffffff 9%,
+        #fbe18a 32%,
+        #fbbb45 37%,
+        #f88330 43%,
+        #F86737 52%,
+        #f8443e 57%,
+        #f4306d 70%,
+        #d53592 85%,
+        #4258f5 100%);
 }
 
 .social-icons li.linkedin {
