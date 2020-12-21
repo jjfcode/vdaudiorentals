@@ -1,0 +1,276 @@
+/* VD Color:    #225D38 */
+/* VD Font      Roboto Slab // Bold */
+
+/* Bold 700
+font-family: 'Roboto Slab', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    background-color: #9fc2ab;
+}
+  
+a {
+    color: #225D38;
+}
+  
+/* header */
+  
+.header {
+    display: grid;
+    grid-template-columns: 250px auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+  
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+  
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+  
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #f4f4f4;
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    transform: translate(0,-200px);
+}
+  
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #fff; 
+}
+
+.header .logo img {
+      display: block;
+      width: 100%;
+}
+  
+/* menu */
+  
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+  
+/* menu icon */
+  
+.header .menu-icon {
+    cursor: pointer;
+    align-self: center;
+    justify-self: end;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+  
+.header .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+  
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+  
+.header .menu-icon .nav-icon:before {
+    top: 5px;
+}
+  
+.header .menu-icon .nav-icon:after {
+    top: -5px;
+}
+  
+/* menu btn */
+  
+.header .menu-btn {
+    display: none;
+}
+  
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top:0;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+.social-icons {
+    margin: 0 10px;
+    padding: 0 0;
+    position: fixed;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    top: 40%;
+    z-index: 1;
+}
+
+.social-icons ul {
+    width: 100px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.social-icons li {
+    list-style-type: none;
+    padding: 5px;
+    transition: .6s;
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #f4f4f4;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.social-icons li i {
+    font-size: 25px;
+    color: #fff;
+}
+
+.social-icons li:hover {
+    background-color: #f4f4f4;
+}
+
+.social-icons li.facebook {
+    background: #3b5998;
+}
+
+.social-icons li.instagram {
+    background: #e95950;
+}
+
+.social-icons li.linkedin {
+    background: #007bb5;
+}
+
+/* 48em = 768px @ 16pt font */
+  
+@media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      justify-self: end;
+      align-self: center;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/home-img1.jpg);
+    background-size: cover;
+}
+
+.banner1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/home-img1.jpg);
+    background-size: cover;
+}
+
+.footer-details {
+    display: grid;
+    grid-template-columns: 350px auto;
+    margin: 0;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+.footer-logo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    float: left;
+    padding: 10px 60px;
+    text-decoration: none;
+
+}
+
+.footer-logo img {
+      display: grid;
+      width: 100%;
+}
+
+.footer-container {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-location {
+    font-size: 11px;  
+}
+
+.footer-container p {
+    font-size: 11px;
+    line-height: .1;
+}
+
+.footer-title {
+    display: grid;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: .1;
+}
+
+@media (max-width: 520px) {
+    .footer-logo {
+        display: none;
+    }
+}
