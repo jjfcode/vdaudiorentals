@@ -145,7 +145,7 @@ a {
     padding: 0 0;
     position: fixed;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    top: 40%;
+    top: 50%;
     z-index: 1;
 }
 
@@ -229,6 +229,7 @@ a {
     grid-template-columns: 350px auto;
     margin: 0;
     padding-bottom: 20px;
+    background: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 }
 
@@ -239,7 +240,6 @@ a {
     float: left;
     padding: 10px 60px;
     text-decoration: none;
-
 }
 
 .footer-logo img {
@@ -251,10 +251,11 @@ a {
     display: grid;
     justify-self: center;
     align-self: center;
+    color: #225D38;
 }
 
 .footer-location {
-    font-size: 11px;  
+    font-size: 11px;
 }
 
 .footer-container p {
