@@ -1,0 +1,33 @@
+/* VD Color:    #225D38 */
+/* VD Font      Roboto Slab // Bold */
+
+.about-container {
+    padding: 250px 200px 173px 200px;
+    justify-items: center;
+}
+
+.about-container h2 {
+    text-align: center;
+}
+
+.about-container .section {
+    margin: 20px;
+    text-align: left;
+    text-indent: 30px;
+    line-height: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 210px 90px 220px 90px;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-container {
+        padding: 100px 10px 40px 10px;
+        justify-items: center;
+    }
+}

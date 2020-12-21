@@ -21,6 +21,7 @@ a {
   
 .header {
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 250px auto;
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
