@@ -1,0 +1,64 @@
+/* VD Color:    #225D38 */
+/* VD Font      Roboto Slab // Bold */
+
+:root {
+    --font-color: #225D38;
+    --font-hover-color: orange;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: auto;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-label {
+    font-size: .75em;
+    color: var(--font-color);
+    display: block;
+    opacity: 1;
+}
+
+.form-control {
+    box-shadow: none;
+    border-radius: 0;
+    border-color: #ccc;
+    border-style: none none solid none;
+    width: 100%;
+    font-size: 1.25em;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--font-hover-color);
+    outline: none;
+}
+
+.btn {
+    background: 0 0 #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: var(--font-color);
+    font-size: 1em;
+    padding: 10 50px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    border-color: var(--font-hover-color);
+    color: var(--font-hover-color);
+}
+
+textarea {
+    resize: none;
+}

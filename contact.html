@@ -6,6 +6,7 @@
     <title>VD Audio Rental – Rent state of the art audio gear for your production need.</title>
     <link rel="shortcut icon" href="img/audiorental circle logo.png" type="image/png">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
 
@@ -53,15 +54,38 @@
     </div>
     <!-- Social Media End -->
 
-    <section class="banner"></section>
-    <section class="banner1"></section>
+    <!-- Form Start -->
+    <div class="container">
+        <form action="#" method="POST" onsubmit="return check();" role="form" class="form">
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="" tabindex="1" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="" tabindex="2" required>
+            </div>
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="" tabindex="3" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" id="message" class="form-control" cols="50" rows="5" placeholder="Enter Message..." tabindex="4"></textarea>
+            </div>
+            <div>
+                <button type="submit" onclick="send(event)" class="btn" >Send Message!</button>
+            </div>
+        </form>
+    </div>
+    <!-- Form End -->
 
     <!-- Footer Start -->
     <div class="footer-details">
         <a href="/" class="footer-logo"><img src="img/logo1-smal.png" alt=""></a>
         <div class="footer-container">
             <h6 class="footer-title">Contact Information</h6>
-            <p class="footer-location">Warehouse</p>
+            <p class="footer-location">Business Address</p>
             <p>16405 NW 8th Ave</p>
             <p>Miami, FL 33169</p>
             <br>
@@ -73,6 +97,7 @@
 
     <!-- Script Start -->
     <script src="https://kit.fontawesome.com/7f2628bcfc.js" crossorigin="anonymous"></script>
+    <script src="js/email.js"></script>
     <!-- Script End -->
 </body>
 </html>
