@@ -4,7 +4,7 @@ function send(event) {
         name:document.getElementById('name').value,
         // SecureToken : "14b14874-42eb-4126-9715-253ac1a1daf0",
         SecureToken : "14b14874-42eb-4126-9715-253ac1a1daf0",
-        To : 'info@vdaudiorentals.com',
+        To : 'jjfcode@gmail.com',
         From : document.getElementById('email').value,
         Subject : document.getElementById('subject').value,
         Body : document.getElementById('message').value,
