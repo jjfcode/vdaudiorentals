@@ -10,12 +10,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    padding: 90px;
+    height: auto;
     width: auto;
 }
 
 .form-group {
-    margin-bottom: 1.5em;
+    margin-bottom: .7em;
 }
 
 .form-label {
@@ -61,4 +62,26 @@
 
 textarea {
     resize: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        height: auto;
+        width: auto;
+    }
+    .form-control {
+        box-shadow: none;
+        border-radius: 0;
+        border-color: #ccc;
+        border-style: none none solid none;
+        width: 250px;
+        font-size: 1.25em;
+    }
+    .form-group {
+        margin-bottom: 2.6em;
+    }
 }
