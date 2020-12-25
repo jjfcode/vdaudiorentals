@@ -358,6 +358,18 @@ a {
     line-height: .1;
 }
 
+.copyright-container {
+    display: flex;
+    background: black;
+}
+.copyright {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-family: 'Comfortaa';
+    font-size: 11px;
+}
+
 @media (max-width: 520px) {
     .newsletter .input {
         width: 75%;
