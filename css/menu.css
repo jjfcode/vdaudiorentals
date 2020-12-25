@@ -223,6 +223,10 @@ a {
     .header .menu-icon {
       display: none;
     }
+    .wrapper p {
+        padding-left: 60px;
+        padding-right: 30px;
+    }
 }
 
 .wrapper {
@@ -262,7 +266,7 @@ a {
 
 .newsletter .input {
     width: 75%;
-    padding: 30px 100px 30px 60px;
+    padding: 30px 63px 30px 60px;
     border-radius: 5px;
     border: none;
     font-size: bold;
@@ -303,7 +307,7 @@ a {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 30px;
+    /* padding: 30px; */
     background: url(../img/home-img1.jpg);
     background-size: cover;
 }
@@ -355,7 +359,15 @@ a {
 }
 
 @media (max-width: 520px) {
+    .newsletter .input {
+        width: 75%;
+        padding: 30px 33px 30px 60px;
+    }
     .footer-logo {
         display: none;
+    }
+    .wrapper p {
+        padding-left: 60px;
+        padding-right: 15px;
     }
 }
